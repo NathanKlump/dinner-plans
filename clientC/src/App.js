@@ -6,7 +6,6 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import { getPosts } from './actions/posts';
 import useStyles from './styles';
-import cuisine from './images/memories.png';
 
 const App = () => {
   const [currentId, setCurrentId] = useState(null);
@@ -20,8 +19,7 @@ const App = () => {
     return (
         <Container maxwidth="lg">
             <AppBar className={classes.appBar} position="static" color="inherit">
-                <Typography className={classes.heading} variant="h2" align="center">Cuisine</Typography>
-                <img src={cuisine} alt="cuisine" height="60" />
+                <Typography className="{classes.heading}" variant="h2" align="center">Dinner Plans</Typography>
             </AppBar>
             <Grow in>
                 <Container>
